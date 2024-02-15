@@ -23,7 +23,7 @@ In this Android game, users can engage in basic mathematical operations includin
 ## Contributors
 
 - [Santiago Osorio](https://github.com/Osorio-Tiago)
-- [Alonso Segura]
+- Alonso Segura
 
 ## Acknowledgments
 
