@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/globos"
+    tools:context=".InitialFragment">
+
+    <ImageView
+        android:id="@+id/ivFruta"
+        android:layout_width="215dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/manzana" />
+
+    <Button
+        android:id="@+id/btn_jugar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/fondoboton"
+        android:onClick="jugar"
+        android:text="@string/btn_jugar"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombreJugador" />
+
+    <EditText
+        android:id="@+id/et_nombreJugador"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="@string/et_nombre"
+        android:inputType="textPersonName"
+        android:maxLength="18"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary_dark"
+        android:textColorHint="@color/colorPrimary_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/ivFruta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPuntuacion"
+        android:layout_width="374dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fondoet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
